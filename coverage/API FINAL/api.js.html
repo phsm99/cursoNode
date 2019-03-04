@@ -20,9 +20,9 @@
     </h1>
     <div class='clearfix'>
       <div class='fl pad1y space-right2'>
-        <span class="strong">67.5% </span>
+        <span class="strong">100% </span>
         <span class="quiet">Statements</span>
-        <span class='fraction'>27/40</span>
+        <span class='fraction'>40/40</span>
       </div>
       <div class='fl pad1y space-right2'>
         <span class="strong">50% </span>
@@ -30,21 +30,21 @@
         <span class='fraction'>2/4</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">25% </span>
+        <span class="strong">100% </span>
         <span class="quiet">Functions</span>
-        <span class='fraction'>1/4</span>
+        <span class='fraction'>4/4</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">69.23% </span>
+        <span class="strong">100% </span>
         <span class="quiet">Lines</span>
-        <span class='fraction'>27/39</span>
+        <span class='fraction'>39/39</span>
       </div>
     </div>
     <p class="quiet">
       Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
     </p>
   </div>
-  <div class='status-line medium'></div>
+  <div class='status-line high'></div>
 <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -187,52 +187,52 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">8x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">6x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span></td><td class="text"><pre class="prettyprint lang-js">const { config } = require('dotenv')
 const { join } = require('path')
@@ -280,19 +280,19 @@ const app = new Hapi.Server({
     port: process.env.PORT
 })
 &nbsp;
-function <span class="fstat-no" title="function not covered" >mapRoutes(</span>instance, methods) {
-<span class="cstat-no" title="statement not covered" >    return methods.map(<span class="fstat-no" title="function not covered" >me</span>thod =&gt; <span class="cstat-no" title="statement not covered" >instance[method]())</span></span>
+function mapRoutes(instance, methods) {
+    return methods.map(method =&gt; instance[method]())
 }
 &nbsp;
 async function main() {
     const connectionPostgres = await PostgresDB.connect()
     const model = await PostgresDB.defineModel(connectionPostgres, UserSchema)
-    const postgresModel = <span class="cstat-no" title="statement not covered" >new Context(new PostgresDB(connectionPostgres, model));</span>
+    const postgresModel = new Context(new PostgresDB(connectionPostgres, model));
 &nbsp;
-    const connection = <span class="cstat-no" title="statement not covered" >MongoDB.connect()</span>
-    const mongoDb = <span class="cstat-no" title="statement not covered" >new Context(new MongoDB(connection, HeroSchema))</span>
+    const connection = MongoDB.connect()
+    const mongoDb = new Context(new MongoDB(connection, HeroSchema))
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    await app.register([</span>
+    await app.register([
         HapiJwt,
         Inert,
         Vision,
@@ -301,32 +301,32 @@ async function main() {
             options: swaggerConfig
         }
     ])
-<span class="cstat-no" title="statement not covered" >    app.auth.strategy('jwt', 'jwt', {</span>
+    app.auth.strategy('jwt', 'jwt', {
         key: MINHA_CHAVE_SECRETA,
         // options: {
         //     expiresIn: 30
         // },
-        validate: <span class="fstat-no" title="function not covered" >(d</span>ado, request) =&gt; {
-<span class="cstat-no" title="statement not covered" >            return {</span>
+        validate: (dado, request) =&gt; {
+            return {
                 isValid: true
             }
         }
     })
 &nbsp;
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    app.auth.default('jwt')</span>
+    app.auth.default('jwt')
 &nbsp;
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    app.route([</span>
+    app.route([
         ...mapRoutes(new HeroRoutes(mongoDb), HeroRoutes.methods()),
         ...mapRoutes(new AuthRoutes(MINHA_CHAVE_SECRETA, postgresModel), AuthRoutes.methods()),
         ...mapRoutes(new UtilRoutes(), UtilRoutes.methods())
     ])
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    await app.start()</span>
-<span class="cstat-no" title="statement not covered" >    console.log('server running at', app.info.port)</span>
+    await app.start()
+    console.log('server running at', app.info.port)
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    return app;</span>
+    return app;
 }
 module.exports = main()</pre></td></tr>
 </table></pre>
@@ -334,7 +334,7 @@ module.exports = main()</pre></td></tr>
 </div><!-- /wrapper -->
 <div class='footer quiet pad2 space-top1 center small'>
   Code coverage
-  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Mon Mar 04 2019 18:59:33 GMT-0300 (GMT-03:00)
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Mon Mar 04 2019 19:19:11 GMT-0300 (GMT-03:00)
 </div>
 </div>
 <script src="..\prettify.js"></script>
