@@ -122,5 +122,25 @@ class AuthRoutes extends BaseRoute {
             }
         }
     }
+
+    listUsers() {
+        return {
+            path: '/listUsers',
+            method: 'GET',
+            config: {
+                tags: ['api'],
+                description: 'listar usuarios',
+                notes: 'retorna a base inteira de usuarios',
+                validate: {
+                    headers: Joi.object({
+                        authorization: Joi.string().required()
+                    }).unknown()
+                }
+            },
+            handler: (request, headers) => {
+                return this.db.read()
+            }
+        }
+    }
 }
 module.exports = AuthRoutes
